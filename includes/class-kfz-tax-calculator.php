@@ -1,13 +1,13 @@
 <?php
 
 /**
- * KFZ Tax Calculator Klasse - Version 1.5 (Korrigiert nach offiziellen Daten)
+ * german-car-tax-DE-1.6 Klasse - Version 1.6 (Korrigiert nach offiziellen Daten)
  * 
  * Berechnet die deutsche KFZ-Steuer nach aktuellen Gesetzen (2025)
  * Unterstützt alle Fahrzeugtypen: Benziner, Diesel, Hybrid, Elektro
  * 
  * @author Mano Kors & NicVW
- * @version 1.5
+ * @version 1.6
  */
 
 // Sicherheitscheck: Direkten Zugriff verhindern

@@ -6,7 +6,7 @@ if (!defined('ABSPATH')) {
 ?>
 
 <div class="wrap">
-    <h1><span class="dashicons dashicons-calculator"></span> KFZ Tax Calculator - Übersicht</h1>
+    <h1><span class="dashicons dashicons-calculator"></span> german-car-tax-DE-1.6 - Übersicht</h1>
     
     <div class="kfz-admin-dashboard">
         <div class="kfz-stats-grid">
@@ -24,7 +24,7 @@ if (!defined('ABSPATH')) {
             
             <div class="kfz-stat-card">
                 <h3>Plugin Version</h3>
-                <div class="kfz-stat-number">1.3</div>
+                <div class="kfz-stat-number">1.6</div>
                 <p>Aktuelle Version</p>
             </div>
             
@@ -75,7 +75,7 @@ if (!defined('ABSPATH')) {
                         <?php endforeach; ?>
                     </tbody>
                 </table>
-                <p><a href="<?php echo admin_url('admin.php?page=kfz-tax-calculator-logs'); ?>" class="button">Alle Anfragen anzeigen</a></p>
+                <p><a href="<?php echo admin_url('admin.php?page=german-car-tax-DE-logs'); ?>" class="button">Alle Anfragen anzeigen</a></p>
             <?php else: ?>
                 <p>Noch keine Berechnungen durchgeführt.</p>
             <?php endif; ?>
