@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: KFZ Tax Calculator DE
+ * Plugin Name: german-car-tax-DE-1.6
  * Description: Calculates German car tax via a form and dynamically displays the result. Supports all vehicle types: Petrol, Diesel, Hybrid, Electric. Shortcode [kfz_tax_form]
- * Version: 1.5
+ * Version: 1.6
  * Author: Mano Kors & NicVW
  * Text Domain: kfz-tax-calculator
  */
