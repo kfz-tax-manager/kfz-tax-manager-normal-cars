@@ -2,7 +2,7 @@
 /**
  * Plugin Name: german-car-tax-DE-1.6
  * Description: Calculates German car tax via a form and dynamically displays the result. Supports all vehicle types: Petrol, Diesel, Hybrid, Electric. Shortcode [kfz_tax_form]
- * Version: 1.6
+ * Version: 1.7
  * Author: Mano Kors & NicVW
  * Text Domain: kfz-tax-calculator
  */
@@ -351,7 +351,8 @@ function kfz_tax_form_shortcode() {
                 </div>
 
                 <div id="euro-norm-container" style="display: none;">
-                    <label for="euro_norm">Euro-Norm (für Fahrzeuge vor Juli 2009)</label>
+                    <label for="euro_norm">Euro-Norm</label>
+                    <div style="font-size: 12px; color: #666; margin-bottom: 4px;">(erforderlich für Fahrzeuge vor 2009)</div>
                     <select id="euro_norm" name="euro_norm">
                         <option value="">Bitte wählen...</option>
                         <option value="Euro 6">Euro 6</option>
@@ -445,8 +446,9 @@ function kfz_tax_form_shortcode() {
             const year = parseInt(yearField.value);
             const selectedType = Array.from(vehicleTypeRadios).find(radio => radio.checked)?.value;
             
-            // Show Euro norm field for non-electric vehicles registered before July 2009
-            if (selectedType && selectedType !== 'elektro' && year && year <= 2009) {
+            // Show Euro norm field only for non-electric vehicles registered before 2009 
+            // (Juli 2009 was the cutoff date for the new system)
+            if (selectedType && selectedType !== 'elektro' && year && year <= 2008) {
                 euroNormContainer.style.display = 'block';
                 euroNormField.setAttribute('required', 'required');
             } else {
