@@ -351,8 +351,7 @@ function kfz_tax_form_shortcode() {
                 </div>
 
                 <div id="euro-norm-container" style="display: none;">
-                    <label for="euro_norm">Euro-Norm</label>
-                    <div style="font-size: 12px; color: #666; margin-bottom: 4px;">(erforderlich für Fahrzeuge vor 2009)</div>
+                    <label for="euro_norm">Euro-Norm <span style="font-size: 12px; color: #666; font-weight: normal; margin-left: 8px;">(erforderlich für Fahrzeuge vor 2009)</span></label>
                     <select id="euro_norm" name="euro_norm">
                         <option value="">Bitte wählen...</option>
                         <option value="Euro 6">Euro 6</option>
